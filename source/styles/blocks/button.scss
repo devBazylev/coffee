@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  width: 141px;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--light);
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--bg-brighter);
+}
+
+.button:active {
+  background-color: var(--bg-dark-more);
+}
+
+.button:disabled {
+  background-color: var(--bg-darker);
+}

@@ -1,0 +1,143 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.pagination {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: 5/3/6/4;
+    width: 1011px;
+  }
+}
+
+.pagination__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: 395px;
+    margin: 0 20px 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 395px;
+    margin: 0 0 0 auto;
+    align-items: end;
+  }
+}
+
+.pagination__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--bright);
+  background-color: var(--bg-lightest);
+  border-radius: 4px;
+
+  @media (min-width: $tablet) {
+    padding: 1px 0 0;
+  }
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  color: var(--light);
+  background-color: var(--bg-brighter);
+}
+
+.pagination__link:active {
+  color: var(--light);
+  background-color: var(--bg-dark-more);
+}
+
+.pagination__link:disabled {
+  color: var(--light);
+  background-color: var(--bg-light);
+}
+
+.pagination__link--current {
+  font-weight: 600;
+  color: var(--main);
+  background-color: var(--bg-lighter);
+  cursor: default;
+}
+
+.pagination__link--current:hover,
+.pagination__link--current:focus {
+  color: var(--main);
+  background-color: transparent;
+}
+
+.pagination__link--current:active {
+  color: var(--main);
+  background-color: transparent;
+}
+
+.pagination__link--left {
+  font-size: 25px;
+  padding: 0 2px 2px 0;
+
+  @media (min-width: $tablet) {
+    width: 91px;
+    padding: 1px 1px 1px 0;
+  }
+}
+
+.pagination__link--right {
+  font-size: 25px;
+  padding: 0 0 2px 1px;
+
+  @media (min-width: $tablet) {
+    width: 104px;
+    padding: 1px 1px 1px 0;
+  }
+}
+
+.pagination__back,
+.pagination__forward {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    min-width: 91px;
+    display: block;
+    padding: 8px 20px;
+    text-align: center;
+  }
+}
+
+.pagination__left {
+  width: 6px;
+  height: 10px;
+  mask-image: url("../../images/icons/stack.svg#left-pagination");
+  background-color: var(--bg-dark);
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.pagination__right {
+  width: 6px;
+  height: 10px;
+  mask-image: url("../../images/icons/stack.svg#right-pagination");
+  background-color: var(--bg-dark);
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+

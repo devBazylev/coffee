@@ -1,0 +1,13 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.logo {
+  grid-area: 1/1/2/2;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px 8px;
+
+  @media (min-width: $desktop) {
+    padding: 22px 20px 18px 40px;
+  }
+}

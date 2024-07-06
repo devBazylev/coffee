@@ -1,0 +1,39 @@
+:root {
+  --white: #ffffff;
+  --black: #333333;
+  --grey: #bdbdbd;
+  --violet: #7859cf;
+  --violet-alter: rgba(120, 89, 207, 0.25);
+  --lavender: #f0ebff;
+  --lavender-light: #eae6fc;
+  --violet-light: #9070ec;
+  --violet-dark: #593cac;
+  --grey-light: #e2e2e2;
+  --grey-lightest: #f8f8f8;
+  --beige: #f3ebe1;
+  --grey-lighter: #e5e6e8;
+  //
+  --main: var(--black);
+  --common: var(--grey);
+  --light: var(--white);
+  --bright: var(--violet);
+  --casual: var(--violet-light);
+  --rare: var(--violet-dark);
+  --bg-lightest: var(--white);
+  --bg-lighter: var(--grey-lightest);
+  --bg-light: var(--grey-light);
+  --bg-brighter: var(--violet-light);
+  --bg-bright: var(--beige);
+  --bg-darker: var(--grey);
+  --bg-dark: var(--violet);
+  --bg-lavender: var(--lavender);
+  --bg-dark-more: var(--violet-dark);
+  --bg-dark-alter: var(--violet-alter);
+  --bg-darkest: var(--black);
+  --border-light: var(--lavender);
+  --border-bright: var(--violet);
+  --border-brighter: var(--violet-light);
+  --border-muddy: var(--grey);
+  --border-cloudy: var(--grey-light);
+  --border-very-bright: var(--violet-dark);
+}
